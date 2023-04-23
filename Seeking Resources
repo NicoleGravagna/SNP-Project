@@ -1,0 +1,156 @@
+Asking Chat GPT which preexisting sources I should seek out. 
+
+Leads:
+https://www.textpresso.org/
+Biopython https://github.com/biopython/biopython
+
+
+
+rsID and FASTA Comparison
+
+
+Nicole Gravagna
+Which open source data set can I use to compare rsID data and FASTA data
+
+One possible open source dataset that you can use to compare rsID data and FASTA data is the Genome Reference Consortium human reference genome (GRCh38) available at the National Center for Biotechnology Information (NCBI) website.
+
+The GRCh38 reference genome is a widely used dataset that provides a comprehensive and accurate representation of the human genome. It includes both the reference sequence and annotated features such as genes, transcripts, and variants.
+
+To compare rsID data and FASTA data using the GRCh38 reference genome, you can use the reference sequence and the dbSNP database also available at the NCBI website. The reference sequence provides the FASTA format, while the dbSNP database provides the rsID data.
+
+You can download the reference sequence and dbSNP database from the NCBI website and use tools such as BLAST or other sequence alignment software to compare the sequences. Additionally, many bioinformatics software tools provide functionalities to compare rsID data and FASTA data against reference genomes, such as the Genome Analysis Toolkit (GATK), the Ensembl Variant Effect Predictor (VEP), and the ANNOVAR software.
+
+
+
+
+
+Nicole Gravagna
+Has anyone created a program to read through PMC articles using NLP?
+
+Yes, there are several programs and tools available that use Natural Language Processing (NLP) to read through articles available in the PubMed Central (PMC) database.
+
+One example is the PubRunner system, which uses NLP techniques to automatically identify relevant articles in PMC based on user-specified queries. The system then processes the articles to extract relevant information, such as gene names, protein names, and disease terms.
+
+Another example is the Textpresso for Neuroscience tool, which uses NLP to annotate and categorize scientific articles related to neuroscience. The tool uses a machine learning approach to automatically identify relevant articles, and then applies NLP techniques to extract relevant information from the text.
+
+There are also several open-source tools available that provide NLP functionalities to analyze text from PMC articles. Some examples include the Natural Language Toolkit (NLTK), Stanford CoreNLP, and spaCy. These tools can be used to perform various NLP tasks, such as named entity recognition, sentiment analysis, and topic modeling, on the text from PMC articles.
+
+Overall, there are many programs and tools available that use NLP to analyze text from PMC articles, and new tools and techniques are continually being developed as the field of NLP continues to advance.
+
+
+
+
+
+SNP Databases Available
+
+
+Nicole Gravagna
+What SNP databases are available
+
+There are several databases that contain information on single nucleotide polymorphisms (SNPs). Some of the most widely used SNP databases are:
+
+dbSNP: This is the largest public database of SNPs, maintained by the National Center for Biotechnology Information (NCBI). It contains over 150 million SNPs from various organisms, including humans.
+
+1000 Genomes Project: This database contains data from a large-scale project that sequenced the genomes of over 2,500 individuals from different populations around the world. It includes information on over 88 million SNPs.
+
+HapMap: This database contains information on common SNPs and their haplotypes (patterns of genetic variation) in different populations. It has been used to identify genetic variations associated with disease susceptibility.
+
+ExAC: This database contains information on genetic variations found in exomes (the protein-coding regions of the genome) from over 60,000 individuals. It includes data on over 7 million SNPs.
+
+gnomAD: This is a genome aggregation database that contains information on genetic variations from over 125,000 exomes and over 15,000 whole genomes. It includes data on over 200 million SNPs.
+
+ClinVar: This database contains information on genetic variations and their clinical significance. It includes data on SNPs that have been associated with diseases or other health conditions.
+
+
+
+
+Yes, there are databases that contain both SNP rsIDs and the PubMed articles that reference them. One such database is SNPedia (https://www.snpedia.com/), which is a wiki-based database that provides information on genetic variations, including SNPs, and their association with diseases and traits. SNPedia contains information on over 100,000 SNPs, along with links to relevant PubMed articles and other external resources.
+
+Another database that provides information on SNPs and their association with diseases is GWAS Catalog (https://www.ebi.ac.uk/gwas/), which is maintained by the European Bioinformatics Institute (EBI). GWAS Catalog provides a comprehensive summary of genetic association studies and their findings, including information on SNPs and their association with diseases and traits. It includes links to relevant PubMed articles and other external resources.
+
+Both SNPedia and GWAS Catalog are publicly available resources that can be used to explore the association between SNPs and diseases or traits, and to find relevant publications that reference specific SNPs.
+
+
+
+There are Python libraries and packages specifically designed for working with genetic data and databases, such as Biopython, PyVCF, and Pysam, which can be used to access and analyze SNP data from dbSNP and other genetic databases.
+
+
+
+
+SNP Databases Available
+
+
+Nicole Gravagna
+What SNP databases are available
+
+There are several databases that contain information on single nucleotide polymorphisms (SNPs). Some of the most widely used SNP databases are:
+
+dbSNP: This is the largest public database of SNPs, maintained by the National Center for Biotechnology Information (NCBI). It contains over 150 million SNPs from various organisms, including humans.
+
+1000 Genomes Project: This database contains data from a large-scale project that sequenced the genomes of over 2,500 individuals from different populations around the world. It includes information on over 88 million SNPs.
+
+HapMap: This database contains information on common SNPs and their haplotypes (patterns of genetic variation) in different populations. It has been used to identify genetic variations associated with disease susceptibility.
+
+ExAC: This database contains information on genetic variations found in exomes (the protein-coding regions of the genome) from over 60,000 individuals. It includes data on over 7 million SNPs.
+
+gnomAD: This is a genome aggregation database that contains information on genetic variations from over 125,000 exomes and over 15,000 whole genomes. It includes data on over 200 million SNPs.
+
+ClinVar: This database contains information on genetic variations and their clinical significance. It includes data on SNPs that have been associated with diseases or other health conditions.
+
+These are just a few examples of the many SNP databases that are available. The choice of database will depend on the specific research question and the type of data that is needed.
+
+
+
+
+
+Nicole Gravagna
+Are there any databases that contain both SNP rsIDs and the pub med articles that reference them?
+
+Yes, there are databases that contain both SNP rsIDs and the PubMed articles that reference them. One such database is SNPedia (https://www.snpedia.com/), which is a wiki-based database that provides information on genetic variations, including SNPs, and their association with diseases and traits. SNPedia contains information on over 100,000 SNPs, along with links to relevant PubMed articles and other external resources.
+
+Another database that provides information on SNPs and their association with diseases is GWAS Catalog (https://www.ebi.ac.uk/gwas/), which is maintained by the European Bioinformatics Institute (EBI). GWAS Catalog provides a comprehensive summary of genetic association studies and their findings, including information on SNPs and their association with diseases and traits. It includes links to relevant PubMed articles and other external resources.
+
+Both SNPedia and GWAS Catalog are publicly available resources that can be used to explore the association between SNPs and diseases or traits, and to find relevant publications that reference specific SNPs.
+
+
+
+
+
+Nicole Gravagna
+Is dbsnp in pandas
+
+No, dbSNP (the database of Single Nucleotide Polymorphisms) is not a part of the pandas library, which is a Python package for data manipulation and analysis. Pandas provides data structures and functions for working with tabular data, and it is not specifically designed for accessing genetic data or databases.
+
+However, pandas can be used to read data from various file formats, including text files, CSV files, and Excel files, which may contain SNP data downloaded from dbSNP or other databases. Once the data is read into a pandas DataFrame, it can be manipulated and analyzed using pandas functions.
+
+There are Python libraries and packages specifically designed for working with genetic data and databases, such as Biopython, PyVCF, and Pysam, which can be used to access and analyze SNP data from dbSNP and other genetic databases.
+
+
+
+
+
+Nicole Gravagna
+What is bioPython 
+
+BioPython is a Python package for computational biology and bioinformatics. It provides a set of tools and functions for working with biological data, including DNA and protein sequences, sequence alignments, protein structures, and genomic data.
+
+BioPython includes modules for sequence manipulation, file parsing, BLAST, phylogenetics, sequence alignment, protein structure analysis, and much more. It provides an easy-to-use interface for performing common bioinformatics tasks, as well as a framework for developing custom algorithms and workflows.
+
+Some of the key features of BioPython include:
+
+Sequence manipulation: BioPython provides functions for reading, writing, and manipulating DNA and protein sequences, as well as functions for generating random sequences, translating DNA to protein, and performing sequence searches.
+
+File parsing: BioPython can read and write various file formats commonly used in bioinformatics, such as FASTA, GenBank, and PDB.
+
+BLAST: BioPython provides an interface for running BLAST searches against various sequence databases.
+
+Phylogenetics: BioPython includes modules for constructing phylogenetic trees and performing evolutionary analyses.
+
+Protein structure analysis: BioPython provides functions for analyzing and visualizing protein structures, such as calculating RMSD and generating molecular graphics.
+
+BioPython is an open-source package and is available for free under the Biopython License. It is widely used in the bioinformatics community and can be used for a variety of tasks, including sequence analysis, genome annotation, and protein structure prediction.
+
+
+
+
+
