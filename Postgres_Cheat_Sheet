@@ -1,0 +1,61 @@
+CREATE TABLE table_name (
+    id SERIAL PRIMARY KEY
+);
+
+
+CREATE TABLE variants (
+    id SERIAL PRIMARY KEY,
+    gene_symbol TEXT,
+    variant TEXT,
+    pathogenicity TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+| Type         | Use                       |
+| ------------ | ------------------------- |
+| `SERIAL`     | auto-increment integer ID |
+| `TEXT`       | strings (default choice)  |
+| `VARCHAR(n)` | length-limited strings    |
+| `INTEGER`    | numbers                   |
+| `NUMERIC`    | precise decimals          |
+| `BOOLEAN`    | true/false                |
+| `DATE`       | date only                 |
+| `TIMESTAMP`  | date + time               |
+
+
+id SERIAL PRIMARY KEY
+gene_symbol TEXT NOT NULL
+variant TEXT UNIQUE
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+CREATE TABLE genes (
+    id SERIAL PRIMARY KEY,
+    symbol TEXT UNIQUE
+);
+
+CREATE TABLE variants (
+    id SERIAL PRIMARY KEY,
+    gene_id INTEGER REFERENCES genes(id)
+);
+
+
+INSERT INTO variants (gene_symbol, variant, pathogenicity)
+VALUES ('POLG', 'Gly848Ser', 'uncertain');
+
+
+SELECT * FROM variants;
+
+
+DELETE FROM variants;
+
+
+
+DROP TABLE IF EXISTS variants;
+
+CREATE TABLE variants (
+    id SERIAL PRIMARY KEY,
+    gene_symbol TEXT,
+    variant TEXT,
+    pathogenicity TEXT
+);
