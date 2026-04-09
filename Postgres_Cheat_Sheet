@@ -1,3 +1,33 @@
+Get-ChildItem "C:\Program Files\PostgreSQL\18\bin\psql.exe"
+& "C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d test_db
+
+\q to leave
+
+
+test_db > vcf_staging
+
+create table if not exists vcf_staging (
+    id bigserial primary key,
+    chrom text,
+    pos bigint,
+    variant_id text,
+    ref text,
+    alt text,
+    qual text,
+    filter text,
+    info text,
+    format text,
+    sample text,
+    source_file text,
+    loaded_at timestamp default current_timestamp
+);
+
+
+
+
+
+
+
 CREATE TABLE table_name (
     id SERIAL PRIMARY KEY
 );
