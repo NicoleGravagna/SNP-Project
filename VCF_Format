@@ -1,0 +1,30 @@
+CHROM | POS | ID | REF | ALT | QUAL | FILTER | INFO
+
+
+  | Column   | Meaning                                | Data Example
+| -------- | -------------------------------------- |
+| `CHROM`  | Chromosome (e.g. 1, 2, X)              | 1
+| `POS`    | Genomic position                       | 55516888
+| `ID`     | rsID (e.g. rs12345)                    | rs113993960
+| `REF`    | Reference allele                       | G
+| `ALT`    | Alternate allele(s)                    | A
+| `QUAL`   | Quality score (often `.` in dbSNP)     | .
+| `FILTER` | Filter status                          | PASS
+| `INFO`   | Dense metadata field (key-value pairs) | RS=113993960;GENEINFO=CFTR:1080;VC=SNV;CAF=0.998,0.002;COMMON=0
+
+
+Example Row:
+  1   55516888   rs123456   G   A   .   .   RS=123456;VP=0x050000020005000002000100;CAF=0.8,0.2
+
+
+
+Hmmm. Two or more alternate alleles - Solution, create a new line for each Alternate Allele
+
+    7   140453136   rs121913529   C   T,G   .   PASS   RS=121913529;GENEINFO=EGFR:1956;VC=SNV
+
+
+
+
+Full Genome format headers
+
+      ['#CHROM', 'POS', 'ID', 'REF', 'ALT', 'QUAL', 'FILTER', 'INFO', 'FORMAT', '56102411137103']
