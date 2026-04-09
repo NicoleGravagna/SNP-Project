@@ -1,7 +1,32 @@
 
 
-Problem statement: Most biological processes require many genes working in tandem in pathways. Gene data is listed by gene, rs variant, and protein, not at the system level. It makes sense that a pathway that contains multiple subclinical (but known adversive) rs variants in different genes might not function at the same rate or capacity vs a pathway that has a light adverse rs variant load. 
+Problem statement: 
+Most biological processes require many genes working in tandem in pathways. Gene data is listed by gene, rs variant, and protein, not at the system level. It makes sense that a pathway that contains multiple subclinical (but known adversive) rs variants in different genes might not function at the same rate or capacity vs a pathway that has a light adverse rs variant load. 
 
 
+Solution: A product that uncovers genetic medical phenotypes at the pathway level and reports back to a user in laymans terms.
 
-I would like to create a user interface, back end, and LLM tool stack that can take in full genome (or 23 and me data) and a set of symptoms (chronic fatigue) or biological function (carbohydrate metabolism). - I want this to be secure (no leaks of personal genomic data) - I want this to be efficient (no need to store data if we can access it easily and inexpensively) (no need to process the same data over and over if we can store it inexpensively) - I want this to be cheap (no expensive accounts for AI or databases or hosting) We need to understand the data that exists, including the shape of it and how we access it. We need to sketch the data, and how we will categorize, label, merge, and otherwise transform it. I also want to vet each decision that we make so that we don't just go with the first solution to a problem.
+Parts: 
+User Interface with LLM to translate user requests into queries
+  Example: "My doctor prescribed this new medication called asprin. Will this work for me?"
+  Example2: "My grandmother went blind at 75. What are my chances of the same?"
+  Example3: "I am exhaused all the time. Why?"
+Input - compressed vcf file
+Referenced Data
+  dbSNP
+  KEGG Pathway
+Output - reports or chat
+
+Functions: 
+File parsing
+Joins
+variant normalization
+Personalized Pathway Build
+
+Additional requirements: 
+I want this to be secure (no leaks of personal genomic data)
+I want this to be efficient (no need to store data if we can access it easily and inexpensively) (no need to process the same data over and over if we can store it inexpensively)
+I want this to be cheap (no expensive accounts for AI or databases or hosting) We need to understand the data that exists, including the shape of it and how we access it. 
+I also want to vet each decision that we make so that we don't just go with the first solution to a problem.
+
+
