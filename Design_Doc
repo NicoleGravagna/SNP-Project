@@ -14,7 +14,8 @@ User Interface with LLM to translate user requests into queries
 Input - compressed vcf file
 Referenced Data
   dbSNP
-  KEGG Pathway
+  Pathway data: reactome, Kegg, Pathbank
+
 Output - reports or chat
 
 Functions: 
