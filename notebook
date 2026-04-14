@@ -1,2 +1,8 @@
-Ok help me write a python script that returns comma delimited results, all of the rows in the postgres table with their gene_ID and official gene full name in two new columns. Filtered for  just geneid = 6390
 
+
+The Logic
+
+Fetch all rsIDs from vcf_staging
+Ask NCBI which of those rsIDs belong to gene 6390
+Join that result back to the table
+Export to CSV with gene_id and full_name columns added
