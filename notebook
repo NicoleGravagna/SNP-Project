@@ -1,0 +1,2 @@
+Ok help me write a python script that returns comma delimited results, all of the rows in the postgres table with their gene_ID and official gene full name in two new columns. Filtered for  just geneid = 6390
+
